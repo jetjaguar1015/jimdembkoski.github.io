@@ -1,16 +1,120 @@
-body {
+/* ------------------------------------------------
+   1) Basic Reset & Body Setup
+------------------------------------------------- */
+* {
   margin: 0;
-  font-family: sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
-nav {
-  background-color: #222; 
-  padding: 1em;
-}
-nav a {
+
+body {
+  /* Use the futuristic Orbitron font from Google */
+  font-family: 'Orbitron', sans-serif;
+  
+  /* Subtle black gradient background */
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
   color: #fff;
-  margin-right: 1em;
-  text-decoration: none;
+  line-height: 1.6;
 }
-nav a:hover {
-  text-decoration: underline;
+
+/* ------------------------------------------------
+   2) Navigation Bar
+------------------------------------------------- */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111; /* Darker background for contrast */
+  padding: 1rem 2rem;
+}
+
+/* "Tomorrowland" Title in Nav */
+nav h1 {
+  color: #0ff; /* Neon cyan color */
+  text-shadow: 0 0 8px #0ff; /* Neon glow effect */
+  font-size: 1.5rem;
+}
+
+/* Nav List */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+/* Nav Links */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+nav ul li a:hover {
+  color: #0ff;
+  text-shadow: 0 0 8px #0ff;
+}
+
+/* ------------------------------------------------
+   3) Hero Section
+------------------------------------------------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+
+  /* Optional background image:
+     Place a "futuristic-bg.jpg" in assets/images if you want:
+     background: url('../images/futuristic-bg.jpg') center/cover no-repeat;
+     Otherwise, just comment the line below or remove it.
+  */
+}
+
+/* Main Title in Hero */
+.hero h2 {
+  font-size: 3rem;
+  text-shadow: 0 0 8px #0ff;
+  margin-bottom: 1rem;
+}
+
+/* Hero Paragraph */
+.hero p {
+  max-width: 600px;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Call To Action Button */
+.cta-btn {
+  background-color: #0ff;
+  color: #111; /* Dark text for contrast */
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.cta-btn:hover {
+  background-color: #fff;
+  box-shadow: 0 0 8px #0ff;
+}
+
+/* ------------------------------------------------
+   4) Footer
+------------------------------------------------- */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #111;
+  margin-top: auto;
+}
+
+footer p {
+  color: #666;
+  font-size: 0.8rem;
 }
