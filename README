@@ -1,1 +1,20 @@
-//ReadMe file
+# My Personal Website
+
+This repository hosts the source code for my personal portfolio website, published via GitHub Pages at:
+[https://jimdembkoski.github.io]
+
+## Overview
+
+- **Theme**: A futuristic "Tomorrowland" design showcasing my background in product leadership and multi-domain expertise.
+- **Technology**: Pure HTML/CSS/JavaScript (static site). No server-side code required.
+
+## How to View Locally
+1. Clone the repo: `git clone https://github.com/jimdembkoski/jimdembkoski.github.io.git`
+2. Open `index.html` in your web browser.
+
+## Future Plans
+- Add new case studies and blog posts.
+- Potential integration with external APIs for dynamic data.
+
+## License
+All rights reserved. Please contact me if you intend to reuse any part of this website.
